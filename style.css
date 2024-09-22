@@ -1,0 +1,260 @@
+/* Quy định chung cho header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+}
+
+/* Quy định cho khối logo */
+.logo img {
+    max-width: 700px;
+    height: auto;
+}
+
+/* Quy định cho khối chứa các liên kết */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: blue;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-links a i:hover {
+    color: #007bff;
+}
+.cart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* Set background color for nav */
+nav {
+    background-color: #77b300; /* Green background */
+    width: 100%; /* Full width of the browser */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/* Style for unordered list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style for list items */
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a:hover {
+    text-decoration: underline; /* Underline when hovered */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 5px 5px;
+    display: block;
+}
+
+/* Style for search form */
+.search-form {
+    display:flex;;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.search-form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:400px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    margin-left: 0px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgba(10, 10, 10, 0.2); /* Slightly stronger shadow */
+    box-sizing: border-box;
+}
+
+.search-form button:hover {
+    background-color: #5a9f00;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.left-section {
+    margin: 20px;
+}
+
+.box {
+    background-color: #dce6f1;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo tổng kích thước không thay đổi */
+    width:500px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3)
+}
+
+h3 {
+    background-color: #4570ab;
+    color: white;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    padding:20px;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px;
+    padding: 0 25px;
+}
+
+li {
+    margin: 5px 0;
+}
+a{
+    text-decoration: none;
+    color: blue; /* Thêm màu nếu cần */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.right-section{
+    background-color: lightgrey;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo tổng kích thước không thay đổi */
+    width:250px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+    .right-section h2 {
+        font-size: 20px; /* Adjust the size as needed */
+        box-sizing: border-box;
+    }
+    .book-container {
+        display: flex;
+        flex-direction: column;
+        animation: scrollUp 10s linear infinite;
+    }
+
+.popular-books, .website-links, .statistics {
+    background-color: #dce6f1;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo tổng kích thước không thay đổi */
+    width:fit-content;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: #3468af;
+    color: white;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    padding:20px;
+    font-weight: bold;
+    
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.book-item img {
+    width: 80px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.book-item a {
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* Định dạng phần LIÊN KẾT WEBSITE */
+.website-links {
+    background-color: lightgrey;
+    color: white;
+    margin-bottom: 5px;
+    width:250px;
+}
+
+.website-links h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.website-links select {
+    width: 80%;
+}
+
+/* Định dạng phần THỐNG KÊ TRUY CẬP */
+.statistics {
+    background-color: lightgrey;
+    color: rgb(10, 9, 9);
+    margin-bottom: 5px;
+    width:250px;
+}
+
+.statistics h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.statistics p {
+    margin: 5px 0;
+}
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

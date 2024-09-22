@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <header>
+        <hr style="border: 0; height: 1px; background-color: rgb(246, 197, 213)">
+        <div class="header">
+            <!-- Khối 1: Chứa logo -->
+            <div class="logo">
+                <img src="https://bizweb.dktcdn.net/100/445/986/files/screenshot-1686817484.png?v=1686817541498%20style=width:%20100px;%20height:%2042px;" alt="Logo" width="30%">
+            </div>
+    
+            <!-- Khối 2: Chứa các liên kết -->
+            <div class="nav-links">
+                <img src="https://cdn.imgbin.com/7/12/10/imgbin-computer-icons-google-play-android-google-contacts-others-zJmHHYnmD5XvibpsL1SqGGKtP.jpg" alt="Cart Icon" class="cart-icon"><a href="./BaitapHTML/Dang nhap.html">Đăng nhập</a> |
+                <a href="./BaitapHTML/Dang ki.html">Đăng ký</a> |
+                <img src="https://e7.pngegg.com/pngimages/81/559/png-clipart-shopping-cart-software-computer-icons-shopping-cart-text-retail-thumbnail.png" alt="Cart Icon" class="cart-icon"><a href="#">Giỏ hàng (trống)</a>
+            </div>
+        </div>
+       </header>
+       <nav>
+        <ul>
+            <li><a href="./BaitapHTML/Trang chu.html">Trang Chủ</a></li>
+            <li><a href="./BaitapHTML/Gioi thieu.html">Giới Thiệu</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+        <form action="#" class="search-form">
+            <input type="text" placeholder="Hãy nhập tên sách cần tìm...">
+            <button type="submit">Tìm kiếm</button>
+        </form>
+       </nav>
+       <left>
+        <div class="left-section">
+            <div class="box">
+                <h3>SÁCH THEO CHỦ ĐỀ</h3>
+                <ul>
+                    <li><a href="#">Ngoại Ngữ</a></li>
+                    <li><a href="#">Công nghệ thông tin</a></li>
+                    <li><a href="#">Luật</a></li>
+                    <li><a href="#">Văn học</a></li>
+                    <li><a href="#">Khoa học kỹ thuật</a></li>
+                    <li><a href="#">Nông nghiệp</a></li>
+                    <li><a href="#">Lịch sử địa lý</a></li>
+                    <li><a href="#">Kinh tế</a></li>
+                    <li><a href="#">Nghệ thuật sống</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>SÁCH THEO NHÀ XUẤT BẢN</h3>
+                <ul>
+                    <li><a href="#">Nhà xuất bản trẻ</a></li>
+                    <li><a href="#">NXB thống kê</a></li>
+                    <li><a href="#">Kim đồng</a></li>
+                    <li><a href="#">Đại học quốc gia</a></li>
+                    <li><a href="#">Văn hóa nghệ thuật</a></li>
+                    <li><a href="#">Văn hóa</a></li>
+                    <li><a href="#">Lao động - xã hội</a></li>
+                    <li><a href="#">Khoa học & kỹ thuật</a></li>
+                </ul>
+            </div>
+        </div>
+       </left>
+       <right>
+             <!-- Sách bán nhiều -->
+    <div class="right-section">
+        <h2>SÁCH BÁN NHIỀU</h2>
+        <div class="book-container">
+            <div class="book-item">
+                <img src="https://nhasachquangloi.vn/pub/media/catalog/product/cache/3bd4b739bad1f096e12e3a82b40e551a/t/v/tv-t1.jpg" alt="Tiếng Việt 3" />
+                <a href="#">Tiếng Việt 3</a>
+            </div>
+            <div class="book-item">
+                <img src="https://sytu.vn//images/bookimg/sgk-toan-3-tap-lop-1-canh-dieu-80.jpg" alt="Toán 3" />
+                <a href="#">Toán 3</a>
+            </div>
+            <div class="book-item">
+                <img src="https://nhasachquangloi.vn/pub/media/catalog/product/cache/3bd4b739bad1f096e12e3a82b40e551a/s/g/sgk-l5-gd-003_1.jpg" alt="Tiếng Anh 5" />
+                <a href="#">Tiếng Anh 5</a>
+            </div>
+            <div class="book-item">
+                <img src="https://file.qdnd.vn/data/images/0/2021/04/08/dieuthuy/84t1.jpg?dpi=150&quality=100&w=575" alt="Tiếng Việt 2" />
+                <a href="#">Tiếng Việt 2</a>
+            </div>
+        </div>
+</div>
+    <!-- Liên kết website -->
+    <div class="website-links">
+        <h2>LIÊN KẾT WEBSITE</h2>
+        <select>
+            <option value="#">----Chọn trang liên kết----</option>
+        <option value="https://daotao.hnmu.edu.vn/">Website</option>
+        <option value="https://your-second-link.com">Khoa</option>
+        </select>
+    </div>
+
+    <!-- Thống kê truy cập -->
+    <div class="statistics">
+        <h2>THỐNG KÊ TRUY CẬP</h2>
+        <p>Tổng truy cập: 3</p>
+        <p>Đang online: 100</p>
+    </div>
+</div>
+<script>
+    document.getElementById('websiteSelect').addEventListener('change', function () {
+        const url = this.value;
+        if (url !== '#') {
+            window.location.href = url;
+        }
+    });
+
+    // Pause animation on hover
+    const bookContainer = document.querySelector('.book-container');
+    bookContainer.addEventListener('mouseenter', () => {
+        bookContainer.style.animationPlayState = 'paused';
+    });
+    bookContainer.addEventListener('mouseleave', () => {
+        bookContainer.style.animationPlayState = 'running';
+    });
+</script>
+       </right>
+
+</body>
+</html>
